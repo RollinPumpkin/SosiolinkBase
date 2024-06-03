@@ -83,14 +83,11 @@
 			$this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Data berhasil diupdate!</div>');
             redirect('Alternatif');
         }
-    
+
         public function destroy($id_alternatif)
         {
             $this->Alternatif_model->delete($id_alternatif);
 			$this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Data berhasil dihapus!</div>');
             redirect('Alternatif');
         }
-    
     }
-    
-    
